@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="show.css">
+    <title></title>
+</head>
+<body>
+<p class="green-word"> Book was successfully created.</p>
+<p><strong>Title:</strong><%= @book.title %></p>
+<p><strong>Body:</strong><%= @book.body %></p>
+<%= link_to "Edit", edit_book_path(@book) %>
+|
+<%= link_to "Back", books_path %>
